@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark's portfolio</title>
+    <link rel="stylesheet" href="stye.css">
+    <script src="https://kit.fontawesome.com/91e21f98b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headet-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Mark</span><br> from Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ==========about========== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profilepicture.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Nulla efficitur, lectus ac laoreet faucibus, libero libero tincidunt nisi, sed gravida ipsum sapien sed diam. In faucibus hendrerit elit ut volutpat. Cras porta fermentum lorem in pulvinar. Vivamus rhoncus mi vitae pellentesque tristique. 
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>UI/UX Training at SOS</li>
+                            <li><span>2022-2023</span><br>Team Lead at Sound Connection Phils., INC.</li>
+                            <li><span>2020-2021</span><br>Internship at SOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at CTU</li>
+                            <li><span>2016</span><br>MBA from MIT CTU</li>
+                            <li><span>2016</span><br>BBA from ISM CTU</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------services-------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Fusce et ante nec arcu pulvinar laoreet. Vestibulum turpis magna, consequat sed sem a, dignissim facilisis nisi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Fusce et ante nec arcu pulvinar laoreet. Vestibulum turpis magna, consequat sed sem a, dignissim facilisis nisi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Fusce et ante nec arcu pulvinar laoreet. Vestibulum turpis magna, consequat sed sem a, dignissim facilisis nisi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+     </div>
+
+     <!-- --------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>
+                        The app connects you to the talented people around the world. 
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>
+                        The app connects you to the talented people around the world. 
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>
+                        The app connects you to the talented people around the world. 
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------contact-------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>09661869465</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mark.gimarangan.1"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mark, Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+ </div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks ){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");
+        }
+        // for(tablink of tablinks ){
+        //     tablink.classList.remove("active-link");
+        // }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+ </script>
+</body>
+</html>
